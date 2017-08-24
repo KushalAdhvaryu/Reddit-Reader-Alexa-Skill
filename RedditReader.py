@@ -10,7 +10,7 @@ app =Flask(__name__)
 ask = Ask(app, "/reddit_reader")
 
 def get_headlines():
-    user_pass_dict = {'user': 'KushalAdhvaryu', 'passwd': 'Kja@1411', 'api_type': 'JSON'}
+    user_pass_dict = {'user': 'urname', 'passwd': 'urpassword', 'api_type': 'JSON'}
     sess = requests.session()
     sess.headers.update({'User-Agent': 'I am testing Alexa here: Kushal'})
     sess.post('https://www.reddit.com/api/login',data = user_pass_dict)
